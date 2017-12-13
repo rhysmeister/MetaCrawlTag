@@ -8,10 +8,6 @@ class MySpider(CrawlSpider):
     custom_settings = {
         'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:39.0) Gecko/20100101 Firefox/39.0',
     }
-    from urlparse import urlparse
-
-    #meta_name = None
-    #meta_value = None
 
     def __init__(self, url=None, meta_name=None, meta_value=None, *args, **kwargs):
         super(MySpider, self).__init__(*args, **kwargs)
